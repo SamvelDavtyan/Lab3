@@ -1,0 +1,2 @@
+D:\Программирование\lab3\Program3\Debug\Program3.exe
+D:\Программирование\lab3\Program3\Debug\Program3.pdb
