@@ -46,21 +46,15 @@ bool BinaryHeap::contains(int key)
 void BinaryHeap::insert(int data)
 {
 	size_t size_heap = this->size;  
-	int parent = (size_heap - 1) / 2; 
 	int* temp = new int[this->size + 1];  
 	for (size_t i = 0; i < this->size; i++)  
 		temp[i] = heap[i];
-	temp[this->size] = data;  
-	while (parent >= 0 && size_heap > 0)   
-	{
-		if (temp[size_heap] > temp[parent])   
-			std::swap(temp[size_heap], temp[parent]); 
-		size_heap = parent;
-		parent = (size_heap - 1) / 2;
-	}
+	temp[this->size] = data; 
 	delete[]heap;
 	heap = temp;
 	this->size++; 
+	for (size_t i = 0; i < this->size; i = 2 * i + 1)
+		heapify();
 }
 
 /* the removal of the tree element by key */
