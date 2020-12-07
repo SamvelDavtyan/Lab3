@@ -45,7 +45,6 @@ bool BinaryHeap::contains(int key)
 /* adding an element to the tree by key */
 void BinaryHeap::insert(int data)
 {
-	size_t size_heap = this->size;  
 	int* temp = new int[this->size + 1];  
 	for (size_t i = 0; i < this->size; i++)  
 		temp[i] = heap[i];
@@ -53,8 +52,7 @@ void BinaryHeap::insert(int data)
 	delete[]heap;
 	heap = temp;
 	this->size++; 
-	for (size_t i = 0; i < this->size; i = 2 * i + 1)
-		heapify();
+	sift_up(this->size - 1);
 }
 
 /* the removal of the tree element by key */
@@ -110,6 +108,15 @@ void BinaryHeap::print_heap()
 		}
 		std::cout << std::endl;
 		k = k * 2 + 1;
+	}
+}
+
+void BinaryHeap::sift_up(int index)
+{
+	while (heap[(index - 1) / 2] < heap[index])
+	{
+		std::swap(heap[index], heap[(index - 1) / 2]);
+		index = (index - 1) / 2;
 	}
 }
 

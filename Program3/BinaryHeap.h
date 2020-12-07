@@ -18,6 +18,7 @@ public:
 	void heapify(size_t);
 	void input_heap(int*, size_t);
 	void print_heap();
+	void sift_up(int );
 
 
 	Iterator* create_dft_iterator();
