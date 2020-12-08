@@ -4,9 +4,10 @@ D:\Программирование\lab3\Program3\List.cpp(186,21): warning C401
 D:\Программирование\lab3\Program3\List.cpp(204,12): warning C4018: '>=': signed/unsigned mismatch
 D:\Программирование\lab3\Program3\BinaryHeap.cpp(11,11): warning C4018: '<': signed/unsigned mismatch
 D:\Программирование\lab3\Program3\BinaryHeap.cpp(16,12): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(104,11): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(105,24): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(181,18): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(185,22): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(52,21): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(108,11): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(109,24): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(185,18): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(189,22): warning C4018: '<': signed/unsigned mismatch
 D:\Программирование\lab3\Program3\List.cpp(215): warning C4715: 'List::at': not all control paths return a value
   UnitTest_lab3.vcxproj -> D:\Программирование\lab3\Program3\Debug\UnitTest_lab3.dll

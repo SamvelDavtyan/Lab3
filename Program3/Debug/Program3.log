@@ -1,10 +1,9 @@
 ﻿  BinaryHeap.cpp
 D:\Программирование\lab3\Program3\BinaryHeap.cpp(11,11): warning C4018: '<': signed/unsigned mismatch
 D:\Программирование\lab3\Program3\BinaryHeap.cpp(16,12): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(104,11): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(105,24): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(181,18): warning C4018: '<': signed/unsigned mismatch
-D:\Программирование\lab3\Program3\BinaryHeap.cpp(185,22): warning C4018: '<': signed/unsigned mismatch
-  main.cpp
-  Generating Code...
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(52,21): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(105,11): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(106,24): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(182,18): warning C4018: '<': signed/unsigned mismatch
+D:\Программирование\lab3\Program3\BinaryHeap.cpp(186,22): warning C4018: '<': signed/unsigned mismatch
   Program3.vcxproj -> D:\Программирование\lab3\Program3\Debug\Program3.exe

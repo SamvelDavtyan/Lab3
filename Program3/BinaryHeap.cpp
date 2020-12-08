@@ -20,10 +20,11 @@ void BinaryHeap::heapify(size_t index=0)
 	}
 }
 
-BinaryHeap::BinaryHeap()
+BinaryHeap::BinaryHeap(int capacity=100)
 {
-	this->heap = nullptr;
+	this->heap = new int[capacity];
 	this->size = 0;
+	this->capacity = capacity;
 }
 
 BinaryHeap::~BinaryHeap()
@@ -45,14 +46,17 @@ bool BinaryHeap::contains(int key)
 /* adding an element to the tree by key */
 void BinaryHeap::insert(int data)
 {
-	int* temp = new int[this->size + 1];  
-	for (size_t i = 0; i < this->size; i++)  
-		temp[i] = heap[i];
-	temp[this->size] = data; 
-	delete[]heap;
-	heap = temp;
-	this->size++; 
-	sift_up(this->size - 1);
+	if (size == capacity) {
+		capacity *= 100;
+		int* temp = new int[capacity];
+		for (int i = 0; i < size; i++)
+			temp[i] = heap[i];
+		delete[]heap;
+		heap = temp;
+	}
+	heap[size] = data;
+	sift_up(this->size);
+	this->size++;
 }
 
 /* the removal of the tree element by key */
@@ -87,9 +91,6 @@ void BinaryHeap::remove(int key)
 
 void BinaryHeap::input_heap(int* heap, size_t size)
 {
-	if (this->heap != nullptr)
-		delete[] heap;
-	this->heap = new int[size];
 	for (size_t i = 0; i < size; i++)
 		this->heap[i] = heap[i];
 	this->size = size;
@@ -119,7 +120,6 @@ void BinaryHeap::sift_up(int index)
 		index = (index - 1) / 2;
 	}
 }
-
 
 Iterator* BinaryHeap::create_dft_iterator()
 {
@@ -167,8 +167,6 @@ BinaryHeap::dft_iterator::~dft_iterator()
 {
 	delete current;
 }
-
-
 
 int BinaryHeap::dft_iterator::next()
 {

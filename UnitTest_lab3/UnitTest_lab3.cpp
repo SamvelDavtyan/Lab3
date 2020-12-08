@@ -11,7 +11,7 @@ namespace UnitTestlab3
 	public:
 		TEST_METHOD(Input_heapTest)
 		{
-			BinaryHeap heap;
+			BinaryHeap heap(10);
 			int arr[5] = { 1,2,3,4,5 };
 			heap.input_heap(arr, 5);
 			for (size_t i = 0; i < 5; i++)
@@ -20,14 +20,14 @@ namespace UnitTestlab3
 		TEST_METHOD(ContainsTest1)
 		{
 			int arr[5] = { 1,2,3,4,5 };
-			BinaryHeap heap;
+			BinaryHeap heap(10);
 			heap.input_heap(arr, 5);
 			Assert::IsTrue(heap.contains(3));
 		}
 		TEST_METHOD(ContainsTest2)
 		{
 			int arr[5] = { 1,2,3,4,5 };
-			BinaryHeap heap;
+			BinaryHeap heap(10);
 			heap.input_heap(arr, 5);
 			Assert::IsTrue(heap.contains(21) == false);
 		}

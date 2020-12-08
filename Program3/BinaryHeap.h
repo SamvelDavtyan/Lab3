@@ -7,9 +7,10 @@ class BinaryHeap
 private:
 	int* heap;
 	size_t size;
+	size_t capacity;
 	
 public:
-	BinaryHeap();
+	BinaryHeap(int capacity);
 	~BinaryHeap();
 
 	bool contains(int);
